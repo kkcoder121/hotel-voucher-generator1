@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Voucher Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Fill Voucher Details</h2>
+    <input id="guestName" placeholder="Guest Name">
+    <input id="hotelName" placeholder="Hotel Name">
+    <input id="address" placeholder="Address">
+    <input id="checkin" placeholder="Check-in Date">
+    <input id="checkout" placeholder="Check-out Date">
+    <input id="bookingId" placeholder="Booking ID">
+    <input id="refNo" placeholder="Reference No">
+    <input id="roomType" placeholder="Room Type">
+    <input id="rooms" placeholder="No. of Rooms">
+    <input id="adults" placeholder="Adults">
+    <input id="children" placeholder="Children">
+    <button onclick="generateVoucher()">Generate Voucher</button>
+  </div>
+  <div id="voucher" class="voucher-container">
+    <h2>Hotel Voucher</h2>
+    <div id="vGuest"></div>
+    <div id="vHotel"></div>
+    <div id="vAddress"></div>
+    <div id="vCheck"></div>
+    <div id="vBooking"></div>
+    <div id="vRoom"></div>
+    <div id="vOccupancy"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
