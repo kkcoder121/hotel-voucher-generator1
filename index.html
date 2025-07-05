@@ -11,15 +11,29 @@
     <h2>Fill Voucher Details</h2>
     <input id="guestName" placeholder="Guest Name">
     <input id="hotelName" placeholder="Hotel Name">
-    <input id="address" placeholder="Address">
-    <input id="checkin" placeholder="Check-in Date">
-    <input id="checkout" placeholder="Check-out Date">
+    <textarea id="address" placeholder="Hotel Address"></textarea>
+    <label>Check-in Date:</label>
+    <input type="date" id="checkin">
+    <label>Check-out Date:</label>
+    <input type="date" id="checkout">
     <input id="bookingId" placeholder="Booking ID">
     <input id="refNo" placeholder="Reference No">
-    <input id="roomType" placeholder="Room Type">
-    <input id="rooms" placeholder="No. of Rooms">
-    <input id="adults" placeholder="Adults">
-    <input id="children" placeholder="Children">
+    <label>Room Type:</label>
+    <select id="roomType">
+      <option>Executive Room</option>
+      <option>Deluxe Room</option>
+      <option>Standard Room</option>
+    </select>
+    <label>No. of Rooms:</label>
+    <input type="number" id="rooms" min="1" max="10">
+    <label>Adults:</label>
+    <select id="adults">
+      <option>1</option><option>2</option><option>3</option><option>4</option>
+    </select>
+    <label>Children:</label>
+    <select id="children">
+      <option>0</option><option>1</option><option>2</option><option>3</option>
+    </select>
     <button onclick="generateVoucher()">Generate Voucher</button>
   </div>
   <div id="voucher" class="voucher-container">
